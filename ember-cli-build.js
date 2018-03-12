@@ -1,7 +1,9 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const postcssnext = require('postcss-cssnext');
+const PostCssNext = require('postcss-cssnext');
+const PostCssImport = require('postcss-import');
+const PostCssExtend = require('postcss-extend');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
@@ -12,7 +14,13 @@ module.exports = function (defaults) {
         browsers: ['last 2 versions'],
         plugins: [
           {
-            module: postcssnext
+            module: PostCssImport
+          },
+          {
+            module: PostCssExtend
+          },
+          {
+            module: PostCssNext
           }
         ]
       }
