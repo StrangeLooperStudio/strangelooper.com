@@ -8,15 +8,16 @@ const App = Application.extend({
   podModulePrefix: config.podModulePrefix,
   Resolver,
   //eslint-disable-next-line
-  engines: {
-    emberBlogMotor: {
-      dependencies: {
-        services: [
-          'store'
-        ]
-      }
-    }
-  }
+  // engines: {
+  //   emberBlogMotor: {
+  //     lazyLoading: false,
+  //     dependencies: {
+  //       services: [
+  //         'store'
+  //       ]
+  //     }
+  //   }
+  // }
 });
 
 loadInitializers(App, config.modulePrefix);

@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.mount('ember-blog-motor', { path: '/blog' });
+  //this.mount('ember-blog-motor', { path: '/' });
 });
 
 export default Router;

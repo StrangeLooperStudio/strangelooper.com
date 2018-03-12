@@ -1,0 +1,82 @@
+body {
+  background-color: rgb(92%,92%,92%);
+  color: #444;
+  font-family: sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  position: relative;
+}
+
+body > header {
+  background-color: rgba(0, 0, 0, 0.05);
+  position: sticky;
+  padding-bottom: 3vw;
+  top: -45vw;
+  text-align: center;
+
+  & h1 {
+    font-size: 27vw;
+    margin: 0;
+    line-height: 22vw;
+  }
+  & h2 {
+    font-size: 30vw;
+    margin: 0;
+  }
+
+
+  & nav {
+    position: relative;
+    top: 10vh;
+    text-align: left;
+    width: 10vw;
+
+    &::before {
+      content: "\221E";
+      left: 0;
+      width: 10vw;
+      height: 10vh;
+      padding-left: 1vw;
+    }
+
+    & ul {
+      margin: 0;
+      position: absolute;
+      background-color: rgba(0,0,0,0);
+      list-style: none;
+      left: -50vw;
+      width: 40vw;
+      padding: 2rem;
+      transition: left 0.5s ease-in, background-color 0.5s ease-in;
+
+      & li {
+        margin: 0.2rem 0;
+        font-size: 5vw;
+        line-height: 6.5vw;
+      }
+    }
+  }
+
+  & nav:hover {
+    & ul {
+      background-color: rgba(92%,92%,92%,1);
+      left: 0;
+    }
+  }
+}
+
+body > nav:hover {
+  left: 0;
+}
+
+body > main {
+  width: 75vw;
+  margin: 0 auto;
+  text-align: justify;
+
+}
+
+body > footer {
+  & p {
+    font-size: 0.8rem;
+  }
+}
