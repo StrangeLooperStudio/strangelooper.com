@@ -14,13 +14,13 @@ body > header {
   text-align: center;
 
   & h1 {
-    font-size: 27vw;
+    font-size: 26vw;
     margin: 0;
     line-height: 22vw;
   }
 
   & h2 {
-    font-size: 30vw;
+    font-size: 29vw;
     margin: 0;
   }
 
@@ -67,6 +67,7 @@ body > header {
 
 body > main {
   width: 75vw;
+  min-height: 100vh;
   margin: 0 auto;
   text-align: justify;
 
